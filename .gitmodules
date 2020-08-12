@@ -1,0 +1,18 @@
+[submodule "python/thirdparty/halton"]
+	path = python/thirdparty/halton
+	url = https://gist.github.com/cea0a91cc127ea3890ac0f002f887bae.git
+[submodule "python/thirdparty/pyexiftool"]
+	path = python/thirdparty/pyexiftool
+	url = https://github.com/smarnach/pyexiftool.git
+[submodule "python/thirdparty/ncnet"]
+	path = python/thirdparty/ncnet
+	url = https://github.com/ignacio-rocco/ncnet.git
+[submodule "python/thirdparty/d2net"]
+	path = python/thirdparty/d2net
+	url = https://github.com/mihaidusmanu/d2-net.git
+[submodule "python/thirdparty/affnet"]
+	path = python/thirdparty/affnet
+	url = https://github.com/ducha-aiki/affnet.git
+[submodule "itr"]
+	path = itr
+	url = https://github.com/brejchajan/itr.git

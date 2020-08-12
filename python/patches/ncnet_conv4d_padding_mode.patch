@@ -1,0 +1,13 @@
+diff --git a/lib/conv4d.py b/lib/conv4d.py
+index 99a5e57..b4c3303 100644
+--- a/lib/conv4d.py
++++ b/lib/conv4d.py
+@@ -68,7 +68,7 @@ class Conv4d(_ConvNd):
+         dilation = _quadruple(dilation)
+         super(Conv4d, self).__init__(
+             in_channels, out_channels, kernel_size, stride, padding, dilation,
+-            False, _quadruple(0), groups, bias)  
++            False, _quadruple(0), groups, bias, padding_mode='zeros') 
+         # weights will be sliced along one dimension during convolution loop
+         # make the looping dimension to be the first one in the tensor, 
+         # so that we don't need to call contiguous() inside the loop

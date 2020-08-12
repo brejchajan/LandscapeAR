@@ -1,0 +1,27 @@
+# CNN models
+python/pretrained/*
+
+# python caches
+__pycache__
+
+# compiled binaries
+*.so
+
+# build directory
+build
+install
+
+# Python virtual environment
+python/venv/*
+
+# Places365 classification
+python/flickr/IO_places365.txt
+python/flickr/categories_places365.txt
+python/flickr/labels_sunattribute.txt
+python/flickr/whole_wideresnet18_places365_python36.pth.tar
+python/flickr/wideresnet18_places365.pth.tar
+python/flickr/wideresnet.py
+python/flickr/W_sceneattribute_wideresnet18.npy
+
+# MacOS intermediates
+.DS_Store

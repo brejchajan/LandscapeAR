@@ -1,0 +1,102 @@
+boating 1
+driving	0
+biking	1
+transporting 0
+sunbathing	1
+touring	0
+hiking	1
+climbing 1
+camping 1
+reading 0
+studying 0
+training 0
+research 0
+diving 1
+swimming 1
+bathing 1
+eating 0
+cleaning 0
+socializing 0
+congregating 0
+waiting in line 0
+competing 0 
+sports 0
+exercise 0
+playing 0
+gaming 0
+spectating 0
+farming 0
+constructing 0
+shopping 0
+medical activity 0
+working 0
+using tools 0
+digging 0
+conducting business 0
+praying 0
+fencing 0
+railing 0
+wire 0
+railroad 0
+trees 1
+grass 1
+vegetation 1
+shrubbery 1
+foliage 1
+leaves 1
+flowers 1
+asphalt 0
+pavement 0
+shingles 1
+carpet 0
+brick 0
+tiles 0
+concrete 0
+metal 0
+paper 0
+wood 0
+vinyl 0
+plastic 0
+cloth 0
+sand 1
+rock 1
+dirt 1
+marble 0
+glass 0
+surf 1
+ocean 1
+running water 1
+still water 1
+ice 1
+snow 1
+clouds 1
+smoke 0
+fire 0
+natural light 1
+sunny 0
+indoor lighting 0
+aged 0
+glossy 0
+matte 0
+sterile 0
+moist 1
+dry 1
+dirty 1
+rusty 0
+warm 1
+cold 1
+natural 1
+man-made 0
+open area 0
+semi-enclosed area 0
+enclosed area 0
+far-away horizon 1
+no horizon 1
+rugged scene 0
+vertical components 0
+horizontal components 0
+symmetrical 0
+cluttered space 0
+scary 0
+soothing 1
+stressful 0
