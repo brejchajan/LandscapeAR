@@ -8,6 +8,7 @@ LandscapeAR: Large Scale Outdoor Augmented Reality by Matching Photographs with
 Terrain Models Using Learned Descriptors,
 In: 16th European Conference on Computer Vision (ECCV), 2020.
 ```
+
 The code for rendering photographs aligned with a textured Digital Elevation
 Model is coupled with the UIST 2018 Immersive Trip Reports paper. If
 you also use the rendering part of the project, please, cite it:
@@ -17,9 +18,11 @@ Immersive Trip Reports. In: Proceedings of the 31st ACM User Interface Software
 and Technology Symposium. Berlín: Association for Computing Machinery,
 2018, s. 389-401. ISBN 978-1-4503-5948-1.
 ```
-
-
-[Project webpage](http://cphoto.fit.vutbr.cz/LandscapeAR)
+## Useful links
+- [LandscapeAR Project webpage](http://cphoto.fit.vutbr.cz/LandscapeAR)
+- [ImmersiveTripReports Project webpage](http://cphoto.fit.vutbr.cz/immersive-trip-reports)
+- [Paper (pdf)](http://cphoto.fit.vutbr.cz/LandscapeAR/data/landscapeAR_paper.pdf)
+- [Supplementary material (pdf)](http://cphoto.fit.vutbr.cz/LandscapeAR/data/landscapeAR_paper_supp.pdf)
 
 ## Acknowledgement
 This work was supported by project no. LTAIZ19004 Deep-Learning Approach to
