@@ -33,6 +33,6 @@
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # Download the pretrained CNN models
-wget cphoto.fit.vutbr.cz/LandscapeAR/data/pretrained.tar.gz
+curl cphoto.fit.vutbr.cz/LandscapeAR/data/pretrained.tar.gz --output pretrained.tar.gz
 tar -zxvf pretrained.tar.gz -C ../python
 rm pretrained.tar.gz
