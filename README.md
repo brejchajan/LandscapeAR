@@ -41,7 +41,7 @@ installed automatically. It has been tested on GNU/Linux (Fedora 31), and MacOSX
 Clone the repository including all the submodules. The dependencies,
 like HardNet or D2Net are included as submodules.
 ```
-git clone --recurse-submodules <https://github.com/brejchajan/LandscapeAR>.
+git clone --recurse-submodules https://github.com/brejchajan/LandscapeAR
 ```
 
 Enter LandscapeAR project, create Python3 virtual environment, activate it,
@@ -100,7 +100,7 @@ automatically build and install the `itr` together with all
 dependencies:
 ```
 cd LandscapeAR/itr
-./scripts/build-itr-fedora.sh build install Release 8
+./scripts/build-fedora.sh build install Release 8
 ```
 Feel free to change the number of processes (here 8) based on your PC
 configuration. If the process goes well, the `itr` will be installed
