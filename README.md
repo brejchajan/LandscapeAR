@@ -1,9 +1,17 @@
 # LandscapeAR: Large Scale Outdoor Augmented Reality by Matching Photographs with Terrain Models Using Learned Descriptors
 
-This repository contains official implementation of the paper:
+This repository contains official implementation of the ECCV 2020 LandscapeAR
+paper. If you use this code in a scientific work, please, cite it:
 ```
 Brejcha, J., Lukáč, M., Hold-Geoffroy, Y., Wang, O., Čadík, M.: LandscapeAR: Large Scale Outdoor Augmented Reality by Matching Photographs with Terrain Models Using Learned Descriptors, In: 16th European Conference on Computer Vision (ECCV), 2020.
 ```
+The code for rendering photographs aligned with a textured Digital Elevation
+Model is coupled with the UIST 2018 Immersive Trip Reports paper. If
+you also use the rendering part of the project, please, cite it:
+```
+BREJCHA Jan, LUKÁČ Michal, CHEN Zhili, DIVERDI Stephen a ČADÍK Martin. Immersive Trip Reports. In: Proceedings of the 31st ACM User Interface Software and Technology Symposium. Berlín: Association for Computing Machinery, 2018, s. 389-401. ISBN 978-1-4503-5948-1.
+```
+
 
 [Project webpage](http://cphoto.fit.vutbr.cz/LandscapeAR)
 
