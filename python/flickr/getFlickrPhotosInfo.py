@@ -3,7 +3,7 @@
 # @Email:  ibrejcha@fit.vutbr.cz; brejchaja@gmail.com
 # @Project: LandscapeAR
 # @Last modified by:   ibrejcha
-# @Last modified time: 2020-08-12T11:41:50+02:00
+# @Last modified time: 2020-08-13T18:34:32+02:00
 # @License: Copyright 2020 CPhoto@FIT, Brno University of Technology,
 # Faculty of Information Technology,
 # Božetěchova 2, 612 00, Brno, Czech Republic
@@ -100,9 +100,12 @@ def printLicenses(db, photo_ids):
     #print(license_ids[1])
     for photo_key in tqdm(photo_ids):
         if photo_key in db:
+            #print(db[photo_key])
             license_id = int(db[photo_key]['photo']['license'])
+            server = db[photo_key]['photo']['server']
+            osecret = db[photo_key]['photo']['secret']
             license = license_ids[license_id]
-            print(photo_key, license_id, license)
+            print(photo_key, license_id, license, "https://live.staticflickr.com/" + server + "/" + photo_key + ".jpg")
         else:
             print(photo_key, -1, "not found")
 
