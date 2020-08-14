@@ -1,9 +1,9 @@
 # @Author: Jan Brejcha <ibrejcha>
-# @Date:   2020-08-11T17:46:34+02:00
+# @Date:   2020-08-14T10:43:41+02:00
 # @Email:  ibrejcha@fit.vutbr.cz; brejchaja@gmail.com
 # @Project: LandscapeAR
 # @Last modified by:   ibrejcha
-# @Last modified time: 2020-08-14T10:43:19+02:00
+# @Last modified time: 2020-08-14T10:45:18+02:00
 # @License: Copyright 2020 CPhoto@FIT, Brno University of Technology,
 # Faculty of Information Technology,
 # Božetěchova 2, 612 00, Brno, Czech Republic
@@ -37,65 +37,23 @@
 # WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
 # OF SUCH DAMAGE.
 
+import sys
+from pose_estimation.eulerZYZ import rot_matrix
 
 
-
-import numpy as np
-import numpy.linalg
-import math
-
-def vec(a, b):
-    return np.array([a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]]);
-
-def inZero2Pi(a):
-    while (a < 0):
-        a += 2 * math.pi
-    while (a >= 2 * math.pi):
-        a -= 2 * math.pi
-    return a
-
-def rotationZ(theta):
-    c = np.cos(theta)
-    s = np.sin(theta)
-    return np.matrix([[c, -s, 0], [s, c, 0], [0, 0, 1]])
-
-def rotationY(theta):
-    c = np.cos(theta)
-    s = np.sin(theta)
-    return np.matrix([[c, 0, s], [0, 1, 0], [-s, 0, c]])
-
-def rotationX(theta):
-    c = np.cos(theta)
-    s = np.sin(theta)
-    return np.matrix([[1, 0, 0], [0, c, -s], [0, s, c]])
-
-def angles(R):
-    alpha = 0
-    beta = 0
-    gamma = 0
-    v1 = np.matrix([[0,0,1]]).transpose()
-    A = -vec(R.dot(v1), v1)
-    if (np.linalg.norm(A) < 1e-15):
-        gamma = 0
-    else:
-        A = np.linalg.inv(R).dot(A.reshape(3,1))
-        gamma = -np.arctan2(-A.item(0), A.item(1))
-    gamma = inZero2Pi(gamma)
-    R = R.dot(rotationZ(-gamma))
-    A = np.linalg.inv(R).dot(np.matrix([[0,0,1]]).transpose())
-    beta = -np.arctan2(A.item(0), A.item(2))
-    beta = inZero2Pi(beta)
-    R = R.dot(rotationY(-beta))
-
-    A = R.dot(np.array([[1,0,0]]).transpose())
-    alpha = np.arctan2(A.item(1), A.item(0))
-    alpha = inZero2Pi(alpha)
-    return alpha, beta, gamma
+def angles_to_xml(a, b, g):
+    m = rot_matrix(float(a), float(b), float(g))
+    print("<!DOCTYPE ObjectXML>")
+    print("<Object>")
+    print(" <C0 x0=\""+str(m[0, 0])+"\" x1=\""+str(m[0, 1])+"\" x2=\""+str(m[0, 2])+"\"/>")
+    print(" <C1 x0=\""+str(m[1, 0])+"\" x1=\""+str(m[1, 1])+"\" x2=\""+str(m[1, 2])+"\"/>")
+    print(" <C2 x0=\""+str(m[2, 0])+"\" x1=\""+str(m[2, 1])+"\" x2=\""+str(m[2, 2])+"\"/>")
+    print("</Object>")
 
 
-def matrix(alpha, beta, gamma):
-    return rotationZ(alpha) * rotationY(beta) * rotationZ(gamma)
-
-
-def rot_matrix(alpha, beta, gamma):
-    return ((rotationZ(-gamma) * rotationX(-beta) * rotationY(-alpha)) * np.linalg.inv(np.transpose(np.array([[0, 1, 0], [0, 0, 1], [1, 0, 0]]))))
+if __name__ == "__main__":
+    """
+    Simple utility to convert rotation angles from GeoPose3K to rotationC2G.xml
+    usable by itr for rendering.
+    """
+    angles_to_xml(sys.argv[1], sys.argv[2], sys.argv[3])
