@@ -322,7 +322,7 @@ public copyright (Creative Commons), complete structure-from-motion reconstructi
 and also instructions for downloading and rendering the remaining data, so that you can re-download, and re-render the data on your own.
 
 ### Satellite Imagery for Rendering
-For the Alps, Yosemite, and Nepal, we used textures from the [Mapbox](mapbpox.com) service. To use them, you just need to create your account and then update the example.earth file with your API key inside the `itr` repository. For Huascaran,
+For the Alps, Yosemite, and Nepal, we used textures from the [Mapbox](https://www.mapbox.com/) service. To use them, you just need to create your account and then update the example.earth file with your API key inside the `itr` repository. For Huascaran,
 we downloaded satellite imagery from ESA. You don't need to render the Huascaran
 dataset, since for this one we already provide the rendered imagery.
 
@@ -357,7 +357,7 @@ same view from different viewpoints. You can do something like:
 itr --single-photoparam <lat> <lon> <FOV [degrees]> rotationC2G.xml photo.jpg --render-photoviews 1024 --output <output_dir> --scene-center 46.86077 9.89454 --render-random 20 200 10 <path/to/example.earth>
 ```
 The train/val/test splits are the same as for previous publication ([Semantic Orientation](http://cphoto.fit.vutbr.cz/semantic-orientation/)), and
-can be downloaded here: [www.fit.vutbr.cz/~ibrejcha/landscapear/splits/geoPose3K.tar.gz](www.fit.vutbr.cz/~ibrejcha/landscapear/splits/geoPose3K.tar.gz).
+can be downloaded here: [www.fit.vutbr.cz/~ibrejcha/landscapear/splits/geoPose3K.tar.gz](http://www.fit.vutbr.cz/~ibrejcha/landscapear/splits/geoPose3K.tar.gz).
 
 ### SfM based datasets
 All remaining datasets are SfM-based, which means, that a Structure-from-Motion
@@ -385,14 +385,14 @@ Scene center is the latitude and longitude included in the name of the dataset.
 The dataset Alps100K has been collected from publicly available source flickr.com for non-commercial research and academic purposes. 
 The rights for each file are listed in the `photo/licenses.txt` file, along with the link to the original source.
 #### Train datasets
-- [Alps Eiger, 9.4 GB](www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_eiger_46.539367_7.832778_30_publish.tar.gz)
-- [Alps Grande Casse, 4.5 GB](www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_grande_casse_45.361771_6.857759_10_publish.tar.gz)
-- [Alps Gran Paradiso, 1.3 GB](www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_gran_paradiso_45.517398_7.266776_10_publish.tar.gz)
-- [Alps Chamonix, 5.1 GB](www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_chamonix_45.99681_7.055562_30_publish.tar.gz)
-- [Alps Matterhorn, 1.0 GB](www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_matterhorn_45.999444_7.832778_30_publish.tar.gz)
-- [Alps Ortler, 4.6 GB](www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_ortler_46.508516_10.544109_10km_maximg_publish.tar.gz)
+- [Alps Eiger, 9.4 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_eiger_46.539367_7.832778_30_publish.tar.gz)
+- [Alps Grande Casse, 4.5 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_grande_casse_45.361771_6.857759_10_publish.tar.gz)
+- [Alps Gran Paradiso, 1.3 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_gran_paradiso_45.517398_7.266776_10_publish.tar.gz)
+- [Alps Chamonix, 5.1 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_chamonix_45.99681_7.055562_30_publish.tar.gz)
+- [Alps Matterhorn, 1.0 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_matterhorn_45.999444_7.832778_30_publish.tar.gz)
+- [Alps Ortler, 4.6 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_ortler_46.508516_10.544109_10km_maximg_publish.tar.gz)
 - [Alps Wildspitze, 3.0 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_wildspitze_46.884126_10.866988_10_publish.tar.gz)
 #### Test datasets
-- [Andes Huascaran, 2.0 GB](www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/andes_huascaran_-9.122187_-77.605310_30_publish.tar.gz)
-- [Yosemite Valley, 481 MB](www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/yosemite_publish.tar.gz)
+- [Andes Huascaran, 2.0 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/andes_huascaran_-9.122187_-77.605310_30_publish.tar.gz)
+- [Yosemite Valley, 481 MB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/yosemite_publish.tar.gz)
 - [Nepal - TBA]
