@@ -368,7 +368,8 @@ All remaining datasets were created using the SfM with terrain reference, as
 described in our ECCV 2020 paper (see the introduction). Each dataset contains
 publicly available photographs under Creative Commons license, 3D reconstructed
 scene in COLMAP and NVM formats, and list with links to download all the photographs
-from the original source. If you want to train your network, it is a good idea
+from the original source (please see the license on Flickr). 
+If you want to train your network, it is a good idea
 to download all photographs available (see the file `photo_urls.txt` contained
 in each dataset).
 
