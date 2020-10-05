@@ -680,13 +680,13 @@ def generatePatches(img1, img2, img1_shape, img2_shape, coords1, coords2,
 
     if show:
         colors = np.random.rand(i1.shape[0], 3)
-        plt.figure(dpi=600)
+        plt.figure()
         #plt.subplot(1, 2, 1)
         plt.imshow(img1)
         plt.scatter(i1, j1, c=colors, s=1.0)
         plt.axis('off')
 
-        plt.figure(dpi=600)
+        plt.figure()
         #plt.subplot(1, 2, 2)
         plt.imshow(img2)
         plt.scatter(i2, j2, c=colors, s=1.0)
@@ -735,7 +735,7 @@ def generatePatches(img1, img2, img1_shape, img2_shape, coords1, coords2,
         patches_stack_2.append(patch2.astype(np.float32) / 255.0)
 
     if show:
-        plt.figure(dpi=600)
+        plt.figure()
         plt.subplot(1, 2, 1)
         plt.imshow(patches1)
         plt.axis('off')
@@ -817,7 +817,7 @@ def showNegatives(patches1, patches2, negatives,
 
 
 def getPatches(img1_name, img2_name, show=False, max_w=1024,
-               patch_size=64, npatches=100, measure=False):
+               patch_size=64, npatches=100, measure=False, save_ply=False):
 
     print("getPatches, ", img1_name, img2_name)
     img1_base, img1_ext = os.path.splitext(img1_name)
@@ -871,7 +871,7 @@ def getPatches(img1_name, img2_name, show=False, max_w=1024,
     img1_3d, imgv1 = unproject_image(img1_resized, img1_depth, RT1, P1)
     img2_3d, imgv2 = unproject_image(img2_resized, img2_depth, RT2, P2)
 
-    if measure:
+    if save_ply:
         savePointCloudToPly(img1_3d[:, :3], imgv1[:, :],
                              'model_v1.ply')
         savePointCloudToPly(img2_3d[:, :3], imgv2[:, :],
@@ -967,7 +967,8 @@ def getPatches(img1_name, img2_name, show=False, max_w=1024,
     # plt.scatter(img2_1[:, 0], img2_1[:, 1], color='orange', s=1.0)
     # plt.scatter(img1_1[:, 0], img1_1[:, 1], color='blue', s=1.0)
     # plt.scatter(coords1[:, 1], coords1[:, 0], color='red', s=1.0)
-    #plt.show()
+    if show:
+        plt.show()
 
     #showNegatives(patches_1, patches_2, negatives,
     #              img1_resized, img2_resized, v1_idx, v2_idx, sel)
@@ -978,7 +979,7 @@ def getPatches(img1_name, img2_name, show=False, max_w=1024,
     # savePointCloudToPly(both_3d, both_c, 'model_real.ply')
 
     # save filtered 3D points
-    if measure:
+    if save_ply:
         savePointCloudToPly(img1_3d[v1_idx, :3], imgv1[v1_idx, :],
                             'model_v1_filtered.ply')
         savePointCloudToPly(img2_3d[v2_idx, :3], imgv2[v2_idx, :],
@@ -991,13 +992,13 @@ def getPatches(img1_name, img2_name, show=False, max_w=1024,
 if __name__ == "__main__":
     #img1_name = sys.argv[1]
     #img2_name = sys.argv[2]
-    img1_name = "/mnt/matylda1/ibrejcha/adobe_intern/data/switzerland_wallis_30km_maximg/final_dataset/real/10036966853_349ae666d8_b.jpg"
-    img2_name = "/mnt/matylda1/ibrejcha/adobe_intern/data/switzerland_wallis_30km_maximg/final_dataset/real/10049279564_7f2989c3b5_b_texture.jpg"
+    #img1_name = "/mnt/matylda1/ibrejcha/adobe_intern/data/switzerland_wallis_30km_maximg/final_dataset/real/10036966853_349ae666d8_b.jpg"
+    #img2_name = "/mnt/matylda1/ibrejcha/adobe_intern/data/switzerland_wallis_30km_maximg/final_dataset/real/10049279564_7f2989c3b5_b_texture.jpg"
 
     #img1_name = "pose_estimation/10036966853_349ae666d8_b.jpg"
     #img2_name = "pose_estimation/10049279564_7f2989c3b5_b_texture.png"
 
-    #img1_name = "/Users/janbrejcha/data/switzerland_wallis_30km_maximg_sample/final_dataset/real/10072177735_d857e011e5_b.png"
-    #img2_name = "/Users/janbrejcha/data/switzerland_wallis_30km_maximg_sample/final_dataset/real/10072185566_47cc975c92_b_texture.png"
+    img1_name = "/Users/janbrejcha/data/switzerland_wallis_30km_maximg_sample/final_dataset/real/10072177735_d857e011e5_b.png"
+    img2_name = "/Users/janbrejcha/data/switzerland_wallis_30km_maximg_sample/final_dataset/real/10072185566_47cc975c92_b_texture.png"
 
-    info = getPatches(img1_name, img2_name, True, 512, 64, 100, measure=True)
+    info = getPatches(img1_name, img2_name, True, 512, 64, 100, measure=True, save_ply=False)
