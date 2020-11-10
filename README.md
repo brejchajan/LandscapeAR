@@ -1,3 +1,4 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/landscapear-large-scale-outdoor-augmented/patch-matching-on-hpatches)](https://paperswithcode.com/sota/patch-matching-on-hpatches?p=landscapear-large-scale-outdoor-augmented)
 # LandscapeAR: Large Scale Outdoor Augmented Reality by Matching Photographs with Terrain Models Using Learned Descriptors
 
 This repository contains official implementation of the ECCV 2020 LandscapeAR
