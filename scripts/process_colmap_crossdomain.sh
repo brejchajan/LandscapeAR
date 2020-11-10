@@ -60,7 +60,7 @@ else
 fi
 
 # preform feature extraction and matching outside COLMAP
-#python3 ../python/sfm/matching.py "$INPUT_PATH" "$SUFFIX" --processes $NUM_THREADS $CUDA $custom_flags
+python3 ../python/sfm/matching.py "$INPUT_PATH" "$SUFFIX" --processes $NUM_THREADS $CUDA $custom_flags
 
 if [ "$(echo $SUFFIX | wc -c)" -gt 1 ]; then
     SUFFIX="_"${SUFFIX}
