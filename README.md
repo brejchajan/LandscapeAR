@@ -130,7 +130,7 @@ with a free quota [https://www.mapbox.com/](https://www.mapbox.com/), and
 update your API key to the example `earth` file: `LandscapeAR/itr-renderer/example.earth`. For your convenience, we also prepared a single GeoTiff
 containing the DEM of the whole alps with 1 arcsecond (~30m) resolution, which
 we used in all our experiments. You can
-[download it here](http://cphoto.fit.vutbr.cz/LandscapeAR/data/alps_tiles_merged_tiled.tif).
+[download it here](https://www.fit.vutbr.cz/~ibrejcha/landscapear/elevation/alps_tiles_merged_tiled.tif).
 This DEM originally comes from [viewfinderpanoramas.org](http://viewfinderpanoramas.org/), thanks!
 
 ## Usage
@@ -327,7 +327,7 @@ For the Alps, Yosemite, and Nepal, we used textures from the [Mapbox](https://ww
 we downloaded satellite imagery from ESA. You don't need to render the Huascaran
 dataset, since for this one we already provide the rendered imagery.
 
-For Alps, we used DEM with resolution of 1 arc-second, freely available on [viewfinderpanoramas.org](http://viewfinderpanoramas.org/dem3.html#hgt). You can download all the tiles you need from there, or you can download the [merged tiles into one](http://www.fit.vutbr.cz/~ibrejcha/landscapear/elevation/alps_tiles_merged_tiled.tif). Similar data are available also for the Nepal, but
+For Alps, we used DEM with resolution of 1 arc-second, freely available on [viewfinderpanoramas.org](http://viewfinderpanoramas.org/dem3.html#hgt). You can download all the tiles you need from there, or you can download the [merged tiles into one](https://www.fit.vutbr.cz/~ibrejcha/landscapear/elevation/alps_tiles_merged_tiled.tif). Similar data are available also for the Nepal, but
 with lower resolution, 3 arc-seconds. Again, you can download the merged DEM:
 [G45](https://www.fit.vutbr.cz/~ibrejcha/landscapear/elevation/G45_merged_tiled.tif), and [H45](https://www.fit.vutbr.cz/~ibrejcha/landscapear/elevation/H45_merged_tiled.tif).
 For Yosemites, we used 1 arc-second data from USGS, and you can download merged
@@ -358,7 +358,7 @@ same view from different viewpoints. You can do something like:
 itr --single-photoparam <lat> <lon> <FOV [degrees]> rotationC2G.xml photo.jpg --render-photoviews 1024 --output <output_dir> --scene-center 46.86077 9.89454 --render-random 20 200 10 <path/to/example.earth>
 ```
 The train/val/test splits are the same as for previous publication ([Semantic Orientation](http://cphoto.fit.vutbr.cz/semantic-orientation/)), and
-can be downloaded here: [www.fit.vutbr.cz/~ibrejcha/landscapear/splits/geoPose3K.tar.gz](http://www.fit.vutbr.cz/~ibrejcha/landscapear/splits/geoPose3K.tar.gz).
+can be downloaded here: [www.fit.vutbr.cz/~ibrejcha/landscapear/splits/geoPose3K.tar.gz](https://www.fit.vutbr.cz/~ibrejcha/landscapear/splits/geoPose3K.tar.gz).
 
 ### SfM based datasets
 All remaining datasets are SfM-based, which means, that a Structure-from-Motion
@@ -387,14 +387,14 @@ Scene center is the latitude and longitude included in the name of the dataset.
 The dataset Alps100K has been collected from publicly available source flickr.com for non-commercial research and academic purposes. 
 The rights for each file are listed in the `photo/licenses.txt` file, along with the link to the original source.
 #### Train datasets
-- [Alps Eiger, 9.4 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_eiger_46.539367_7.832778_30_publish.tar.gz)
-- [Alps Grande Casse, 4.5 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_grande_casse_45.361771_6.857759_10_publish.tar.gz)
-- [Alps Gran Paradiso, 1.3 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_gran_paradiso_45.517398_7.266776_10_publish.tar.gz)
-- [Alps Chamonix, 5.1 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_chamonix_45.99681_7.055562_30_publish.tar.gz)
-- [Alps Matterhorn, 1.0 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_matterhorn_45.999444_7.832778_30_publish.tar.gz)
-- [Alps Ortler, 4.6 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_ortler_46.508516_10.544109_10km_maximg_publish.tar.gz)
-- [Alps Wildspitze, 3.0 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_wildspitze_46.884126_10.866988_10_publish.tar.gz)
+- [Alps Eiger, 9.4 GB](https://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_eiger_46.539367_7.832778_30_publish.tar.gz)
+- [Alps Grande Casse, 4.5 GB](https://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_grande_casse_45.361771_6.857759_10_publish.tar.gz)
+- [Alps Gran Paradiso, 1.3 GB](https://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_gran_paradiso_45.517398_7.266776_10_publish.tar.gz)
+- [Alps Chamonix, 5.1 GB](https://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_chamonix_45.99681_7.055562_30_publish.tar.gz)
+- [Alps Matterhorn, 1.0 GB](https://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_matterhorn_45.999444_7.832778_30_publish.tar.gz)
+- [Alps Ortler, 4.6 GB](https://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_ortler_46.508516_10.544109_10km_maximg_publish.tar.gz)
+- [Alps Wildspitze, 3.0 GB](https://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/alps_wildspitze_46.884126_10.866988_10_publish.tar.gz)
 #### Test datasets
-- [Andes Huascaran, 2.0 GB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/andes_huascaran_-9.122187_-77.605310_30_publish.tar.gz)
-- [Yosemite Valley, 481 MB](http://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/yosemite_publish.tar.gz)
+- [Andes Huascaran, 2.0 GB](https://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/andes_huascaran_-9.122187_-77.605310_30_publish.tar.gz)
+- [Yosemite Valley, 481 MB](https://www.fit.vutbr.cz/~ibrejcha/landscapear/datasets/yosemite_publish.tar.gz)
 - [Nepal - TBA]
