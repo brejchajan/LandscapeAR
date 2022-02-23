@@ -130,7 +130,7 @@ with a free quota [https://www.mapbox.com/](https://www.mapbox.com/), and
 update your API key to the example `earth` file: `LandscapeAR/itr-renderer/example.earth`. For your convenience, we also prepared a single GeoTiff
 containing the DEM of the whole alps with 1 arcsecond (~30m) resolution, which
 we used in all our experiments. You can
-[download it here](cphoto.fit.vutbr.cz/LandscapeAR/data/alps_tiles_merged_tiled.tif).
+[download it here](http://cphoto.fit.vutbr.cz/LandscapeAR/data/alps_tiles_merged_tiled.tif).
 This DEM originally comes from [viewfinderpanoramas.org](http://viewfinderpanoramas.org/), thanks!
 
 ## Usage
