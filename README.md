@@ -329,14 +329,14 @@ dataset, since for this one we already provide the rendered imagery.
 
 For Alps, we used DEM with resolution of 1 arc-second, freely available on [viewfinderpanoramas.org](http://viewfinderpanoramas.org/dem3.html#hgt). You can download all the tiles you need from there, or you can download the [merged tiles into one](http://www.fit.vutbr.cz/~ibrejcha/landscapear/elevation/alps_tiles_merged_tiled.tif). Similar data are available also for the Nepal, but
 with lower resolution, 3 arc-seconds. Again, you can download the merged DEM:
-[G45](www.fit.vutbr.cz/~ibrejcha/landscapear/elevation/G45_merged_tiled.tif), and [H45](www.fit.vutbr.cz/~ibrejcha/landscapear/elevation/H45_merged_tiled.tif).
+[G45](https://www.fit.vutbr.cz/~ibrejcha/landscapear/elevation/G45_merged_tiled.tif), and [H45](https://www.fit.vutbr.cz/~ibrejcha/landscapear/elevation/H45_merged_tiled.tif).
 For Yosemites, we used 1 arc-second data from USGS, and you can download merged
-DEM tiles here: [Sierra](www.fit.vutbr.cz/~ibrejcha/landscapear/elevation/sierra_tiled.tif). Please, update your example.earth file with the downloaded
+DEM tiles here: [Sierra](https://www.fit.vutbr.cz/~ibrejcha/landscapear/elevation/sierra_tiled.tif). Please, update your example.earth file with the downloaded
 DEMs using the GDAL driver. More details, how to do it can be found in
 [OSGEarth manual](http://docs.osgearth.org/en/latest/user/earthfiles.html?highlight=earth%20file).
 
 ### GeoPose3K
-First, download and unpack the [GeoPose3K dataset](merlin.fit.vutbr.cz/elevation/geoPose3K_final_publish.tar.gz). The GeoPose3K dataset contains images, camera
+First, download and unpack the [GeoPose3K dataset](https://merlin.fit.vutbr.cz/elevation/geoPose3K_final_publish.tar.gz). The GeoPose3K dataset contains images, camera
 positions, field-of-view, and camera rotation, for details see the README file
 inside the dataset. For each image in the dataset, first generate the rotation
 matrix xml file as follows:
